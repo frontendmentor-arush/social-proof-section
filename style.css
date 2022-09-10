@@ -1,0 +1,206 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: League Spartan;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.heading h1{
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    width: 200px;
+    margin: 0 auto;
+}
+.heading p{
+    font-weight: 400;
+    width: 280px;
+    margin: 0 auto;
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 1.3;
+}
+
+.rating-card{
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.rating h3{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.review-card{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    
+}
+
+.review-card img{
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+    
+}
+
+.review-card h2{
+    color: var(--White);
+    font-weight: 400;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.review-card h3{
+    color: var(--Soft-Pink);
+    padding-left: 10px;
+}
+
+.review-card p{
+    color: var(--White);
+    line-height: 1.4;
+    width: 350px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card-header{
+    display: flex;
+    margin: 0 auto;
+    padding-left: 20px;
+
+}
+
+@media screen and (min-width:760px){
+    body{
+        background-image: url(./images/bg-pattern-top-desktop.svg);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    .review{
+        display: flex;
+        justify-content:center;
+    }
+
+    .rating-card{
+        width: 400px;
+        display: flex;
+    }
+
+    .rating-card img{
+        width: 20px;
+        padding: 5px;
+    }
+
+    
+
+
+    .top{
+        display: flex;
+    }
+
+    .rating{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .heading{
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-weight: 700;
+    }
+
+    .heading h1{
+        font-size: 38px;
+        font-weight: 700;
+        width: 250px;
+        color: var(--Very-Dark-Magenta);
+      
+
+    }
+
+    .heading p{
+        margin-left: 35px;
+        font-size: 16px;
+    }
+
+    .rating{
+        margin-right: 180px;
+    }
+
+    .rating-card{
+        background-color: hsl(300, 24%, 96%);
+        padding: 1.5rem;
+        width: 400px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+        
+    }
+
+    .rating-card:nth-child(1) {
+        margin-left: 5rem;
+    }
+    
+    .rating-card:nth-child(2) {
+        margin-left: 3rem;
+    }
+    
+    .rating-card:nth-child(3) {
+        margin-left: 1rem;
+    }
+
+
+    .review-card{
+        padding: 2rem;
+        height: 160px;
+    }
+    .review-card:nth-child(1) {
+        margin-top: 1rem;
+    }
+    
+    .review-card:nth-child(2) {
+        margin-top: 2rem;
+    }
+    
+    .review-card:nth-child(3) {
+        margin-top: 3rem;
+    }
+
+
+
+}
+
